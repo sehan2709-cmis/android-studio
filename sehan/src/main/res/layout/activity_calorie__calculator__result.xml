@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Calorie_Calculator_Result">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="12dp"
+        android:background="#7C9E57"
+        android:text="Calorie Calculator Result"/>
+
+    <TextView
+        android:id="@+id/this_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FOOD NAME"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:textColor="#000000"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/this_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#ff0000"
+        android:layout_marginLeft="5dp"
+        android:text="Total Calorie: (kcal)"/>
+
+    <TextView
+        android:id="@+id/this_ingredient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:text="ingredient list, ingredient list, ingredient list, ingredient list, ingredient list, ingredient list"/>
+
+    <TextView
+        android:id="@+id/this_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="35dp"
+        android:textColor="#535353"
+        android:textSize="15sp"
+        android:text="Fat: (g)"/>
+
+    <TextView
+        android:id="@+id/this_cholesterol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="35dp"
+        android:textColor="#535353"
+        android:textSize="15sp"
+        android:text="Cholesterol: (g)"/>
+
+    <TextView
+        android:id="@+id/this_sodium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="35dp"
+        android:textColor="#535353"
+        android:textSize="15sp"
+        android:text="Sodium: (g)"/>
+
+    <TextView
+        android:id="@+id/this_carbohydrates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="35dp"
+        android:textColor="#535353"
+        android:textSize="15sp"
+        android:text="Carbohydrates: (g)"/>
+
+    <TextView
+        android:id="@+id/this_protein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="35dp"
+        android:textColor="#535353"
+        android:textSize="15sp"
+        android:text="Protein: (g)"/>
+
+    <Button
+        android:id="@+id/check_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="15dp"
+        android:text="check result"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\n\n\n\n\n\n\n\n\n\n\n\n\n\n--------------------------------------------------------------------------------------------------"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ccr_to_conv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/calorie" />
+
+        <ImageButton
+            android:id="@+id/ccr_to_bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bmi"/>
+
+        <ImageButton
+            android:id="@+id/ccr_to_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/house"/>
+
+        <ImageButton
+            android:id="@+id/ccr_to_wc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/reload"/>
+
+        <ImageButton
+            android:id="@+id/ccr_to_fam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/docbo"/>
+    </LinearLayout>
+
+</LinearLayout>
