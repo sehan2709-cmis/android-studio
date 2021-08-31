@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BMI_Calculator">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="12dp"
+        android:textColor="#ffffff"
+        android:background="#7C9E57"
+        android:text="Body Mass Index (B.M.I) Calculator"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="#000000"
+        android:text="What is Body Mass Index?"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="2dp"
+        android:text="The body mass index (BMI) is a measure that uses\nyour height and weight to work out if your weight is healthy.\n\nThe BMI calculation divides an adult's weight in kilogram\nby their height in metres squared.\nFor example, A BMI of 25 means 25kg/m2."/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/bmi_height"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:hint="Height (in cm)"/>
+
+        <Button
+            android:id="@+id/bmic_to_wc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="weight / height convertor"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/bmi_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:hint="Weight (in kg)"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bmi_calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="calculate"
+            android:layout_marginLeft="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="You're B.M.I. score is: "/>
+
+        <TextView
+            android:id="@+id/bmi_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bmi_arrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_marginTop="6dp"
+        android:textSize="15sp"
+        android:text="↓"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#787878"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:background="#03D9FF"/>
+
+        <TextView
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:background="#03FF25"/>
+
+        <TextView
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:background="#F7FF03"/>
+
+        <TextView
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:background="#FF8503"/>
+
+        <TextView
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:background="#FF1803"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#787878"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#03D9FF"
+            android:text="UDER\nWEIGHT"/>
+
+        <TextView
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#03FF25"
+            android:text="NORMAL"/>
+
+        <TextView
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#F7FF03"
+            android:text="OVER\nWEIGHT"/>
+
+        <TextView
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#FF8503"
+            android:text="OBESE"/>
+
+        <TextView
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#FF1803"
+            android:text="EXTREMLY OBESE"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="12dp"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:text="Body Mass Index is calculated with only weight and height, which means overweighted doesn't mean you body is unhealthy.\n\nFor example, bodybuilder has lots of mucles weight which makes their bmi higher than normal.\n\nDo not trust 100% on B.M.I.,however, it can help to know how ratio of your height and mass are balanced."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="--------------------------------------------------------------------------------------------------"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/bmi_to_conv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/calorie" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bmi"/>
+
+        <ImageButton
+            android:id="@+id/bmi_to_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/house"/>
+
+        <ImageButton
+            android:id="@+id/bmi_to_wc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/reload"/>
+
+        <ImageButton
+            android:id="@+id/bmi_to_fam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/docbo"/>
+    </LinearLayout>
+</LinearLayout>

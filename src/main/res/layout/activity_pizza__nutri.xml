@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Pizza_Nutri">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="12dp"
+        android:background="#7C9E57"
+        android:text="Pizza Nutrition"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_pepporini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="페퍼로니 피자"/>
+
+        <Button
+            android:id="@+id/btn_hawaiian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="하와이안 피자"/>
+
+        <Button
+            android:id="@+id/btn_cheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="치즈 피자"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_sweet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="고구마 피자"/>
+
+        <Button
+            android:id="@+id/btn_bulgo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="불고기 피자"/>
+
+        <Button
+            android:id="@+id/btn_gorg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="고르곤졸라 피자"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_pota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="포테이토 피자"/>
+
+        <Button
+            android:id="@+id/btn_shrimp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="새우 피자"/>
+
+        <Button
+            android:id="@+id/btn_steak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="스테이크 피자"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="#ECECEC"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pizza_result_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:text="MENU"/>
+
+        <TextView
+            android:id="@+id/pizza_result_calorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="#FF0000"
+            android:textSize="15sp"
+            android:text="Total Calorie:  (kcal)"/>
+
+        <TextView
+            android:id="@+id/pizza_result_fat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="#535353"
+            android:textSize="15sp"
+            android:text="Fat: (g)"/>
+
+        <TextView
+            android:id="@+id/pizza_result_chol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="#535353"
+            android:textSize="15sp"
+            android:text="Cholesterol:  (g)"/>
+
+        <TextView
+            android:id="@+id/pizza_result_sodium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="#535353"
+            android:textSize="15sp"
+            android:text="Sodium:  (g)"/>
+
+        <TextView
+            android:id="@+id/pizza_result_carb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="#535353"
+            android:textSize="15sp"
+            android:text="Carbohydrates:  (g)"/>
+
+        <TextView
+            android:id="@+id/pizza_result_protein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="#535353"
+            android:textSize="15sp"
+            android:text="Protein:  (g)"/>
+
+        <TextView
+            android:id="@+id/pizza_result_hints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:textColor="#8F8F8F"
+            android:textSize="15sp"
+            android:text="there may be some differences depending on\nbrand and store."/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="--------------------------------------------------------------------------------------------------"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/pizz_to_conv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/calorie" />
+
+        <ImageButton
+            android:id="@+id/pizz_to_bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bmi"/>
+
+        <ImageButton
+            android:id="@+id/pizz_to_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/house"/>
+
+        <ImageButton
+            android:id="@+id/pizz_to_wc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/reload"/>
+
+        <ImageButton
+            android:id="@+id/pizz_to_fam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/docbo"/>
+    </LinearLayout>
+
+</LinearLayout>

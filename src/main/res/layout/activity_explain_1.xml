@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#4536B6F1"
+    tools:context=".Explain_1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="7dp"
+        android:background="#7C9E57"
+        android:text="What is nutrition, and why does it matter?"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#666666"
+        android:text="Nutrition is the study of food and how it affects the body. People need to consume a varied diet to obtain a wide range of nutrients.\n\nSome people choose to follow a specific diet, in which they focus on certain foods and avoid others. People who do this may need to plan carefully to ensure they obtain all the necessary vitamins to maintain their health.\n\nA diet that is rich in plant-based foods and that limits added animal fats, processed foods, and added sugar and salt is most likely to benefit a person’s health."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#666666"
+        android:text="There are 6 essential nutrients.\n\nEssential nutrients are compounds that the body can’t make or can’t make in sufficient quantity. According to the World Health Organization, these nutrients must come from food, and they’re vital for disease prevention, growth, and good health. While there are many essential nutrients, they can be broken into two categories: macronutrients and micronutrients.\n\nMacronutrients are eaten in large amounts and include the primary building blocks of your diet — protein, carbohydrates, and fat — which provide your body with energy.\n\nVitamins and minerals are micronutrients, and small doses go a long way. There are six main groups of essential micronutrients and macronutrients."/>
+
+    <Button
+        android:id="@+id/btn_next1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:text="next"/>
+
+    <Button
+        android:id="@+id/btn_skip1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:text="skip"/>
+
+</LinearLayout>

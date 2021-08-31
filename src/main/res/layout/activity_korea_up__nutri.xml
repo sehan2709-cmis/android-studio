@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".KoreaUp_Nutri">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="12dp"
+        android:background="#7C9E57"
+        android:text="Chinese (Food) Nutrition"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_jajang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="짜장면"/>
+
+        <Button
+            android:id="@+id/btn_ganjajang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="간짜장"/>
+
+        <Button
+            android:id="@+id/btn_chambong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="짬뽕"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_udon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="우동 / 울면"/>
+
+        <Button
+            android:id="@+id/btn_jjamjja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="짬짜면"/>
+
+        <Button
+            android:id="@+id/btn_friedrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="볶음밥"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_jabchae"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="잡채밥"/>
+
+        <Button
+            android:id="@+id/btn_tangsu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="탕수육"/>
+
+        <Button
+            android:id="@+id/btn_kanpung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="깐풍기"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="#ECECEC"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/whynot_result_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:text="MENU"/>
+
+        <TextView
+            android:id="@+id/whynot_result_calorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="#FF0000"
+            android:textSize="15sp"
+            android:text="Total Calorie:  (kcal)"/>
+
+        <TextView
+            android:id="@+id/whynot_result_fat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="#535353"
+            android:textSize="15sp"
+            android:text="Fat: (g)"/>
+
+        <TextView
+            android:id="@+id/whynot_result_chol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="#535353"
+            android:textSize="15sp"
+            android:text="Cholesterol:  (g)"/>
+
+        <TextView
+            android:id="@+id/whynot_result_sodium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="#535353"
+            android:textSize="15sp"
+            android:text="Sodium:  (g)"/>
+
+        <TextView
+            android:id="@+id/whynot_result_carb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="#535353"
+            android:textSize="15sp"
+            android:text="Carbohydrates:  (g)"/>
+
+        <TextView
+            android:id="@+id/whynot_result_protein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="#535353"
+            android:textSize="15sp"
+            android:text="Protein:  (g)"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:textColor="#8F8F8F"
+            android:textSize="15sp"
+            android:text="there may be some differences depending on\nbrand and store."/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="--------------------------------------------------------------------------------------------------"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ynw_to_conv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/calorie" />
+
+        <ImageButton
+            android:id="@+id/ynw_to_bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bmi"/>
+
+        <ImageButton
+            android:id="@+id/ynw_to_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/house"/>
+
+        <ImageButton
+            android:id="@+id/ynw_to_wc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/reload"/>
+
+        <ImageButton
+            android:id="@+id/ynw_to_fam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/docbo"/>
+    </LinearLayout>
+
+</LinearLayout>
